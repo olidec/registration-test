@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w3-theme-light" style="width:60%">
+    <div class="w3-container w3-theme-l1"><h2>Anmeldung Kendo Schweizermeisterschaften 2023</h2></div>
+        <form 
+            class="w3-container w3-padding-16"
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbwJsnbIzFPq8dqTJreaKVkl-vkc25O2EEFDHuXHE3G6WpCcEmZ9b128AKIVvpaEJxHd/exec"
+            >
+
+            <fieldset class="w3-margin-bottom">
+                <legend class="w3-container w3-theme-l1"><h4>Persönliche Informationen</h4></legend>
+                
+                <label>Vorname | Prénom </label>
+                <input class="w3-input w3-border w3-margin-bottom" name="Vorname" type="text" placeholder="Vorname" required>
+                
+                <label>Name | Nom</label>
+                <input class="w3-input w3-border w3-margin-bottom" name="Name" type="text" placeholder="Name" required>
+
+                <label for="">Email Adresse | Adresse email</label>
+                <input class="w3-input w3-border w3-margin-bottom" name="Email" type="email" placeholder="Email" required>
+
+                <label for="">Verein | Club</label>
+                <select class="w3-input w3-selct w3-margin-bottom" name="Verein" id="Verein" required>
+                    <option disabled selected value> -- Wähle eine Option | Choisis une option -- </option>
+                    <option value="Tendokan Aarau">Tendokan Aarau</option>
+                    <option value="Bushikan Au">Bushikan Au</option>
+                    <option value="Tshiku Sei Kan Basel">Tshiku Sei Kan Basel</option>
+                    <option value="Shin Ho Kan Bern">Shin Ho Kan Bern</option>
+                    <option value="Senbukan Budoschule Luzern">Senbukan Budoschule Luzern</option>
+                    <option value="Shung Do Kwan Genève">Shung Do Kwan Genève</option>
+                    <option value="Kendo Club Kriens">Kendo Club Kriens</option>
+                    <option value="Budokan Lausanne">Budokan Lausanne</option>
+                    <option value="Ken Shin Kan Olten">Ken Shin Kan Olten</option>
+                    <option value="Kendo Club St. Gallen">Kendo Club St. Gallen</option>
+                    <option value="Mu Mun Kwan Ticino">Mu Mun Kwan Ticino</option>
+                    <option value="Kensaikai Kendo Uni Bern">Kensaikai Kendo Uni Bern</option>
+                    <option value="Kendo Winterthur">Kendo Winterthur</option>
+                    <option value="Budokan Zürich">Budokan Zürich</option>
+                </select>
+    
+                <label>Geburtsdatum | Date de naissance</label>
+                <input class="w3-input w3-border w3-margin-bottom" name="Geburtsdatum" type="date" placeholder="Geburtsdatum" required>
+    
+                <label for="">Gradierung | Graduation</label>
+                <select class="w3-input w3-selct w3-margin-bottom" name="Gradierung" id="Gradierung" required>
+                    <option disabled selected value> -- Wähle eine Option | Choisis une option -- </option>
+                    <option value="keine">keine</option>
+                    <option value="5. Kyu">5. Kyu</option>
+                    <option value="4. Kyu">4. Kyu</option>
+                    <option value="3. Kyu">3. Kyu</option>
+                    <option value="2. Kyu">2. Kyu</option>
+                    <option value="1. Kyu">1. Kyu</option>
+                    <option value="1. Dan">1. Dan</option>
+                    <option value="2. Dan">2. Dan</option>
+                    <option value="3. Dan">3. Dan</option>
+                    <option value="4. Dan">4. Dan</option>
+                    <option value="5. Dan">5. Dan</option>
+                    <option value="6. Dan">6. Dan</option>
+                    <option value="7. Dan">7. Dan</option>
+                </select>
+    
+                <label for="Budopass-Nr">Budopass-Nr. | No. Budopass</label>
+                <input class="w3-input w3-border w3-margin-bottom" name="Budopass-Nr" type="text" placeholder="Budopass-Nr" required>
+
+                <label class="w3-margin-right">Letzte zwei Jahreslizenzen bezahlt? | Deux dernières licences annuelles payées ?</label> <br>
+                <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lizenzen" type="checkbox" placeholder="Lizenzen" required> 
+
+            </fieldset>
+
+            <fieldset class="w3-cell-row w3-margin-bottom" >
+                <legend class="w3-container w3-theme-l1"><h4>Kategorien</h4></legend>
+                <div class="w3-cell">
+                    <label class="w3-margin-right">U12</label> <br>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U12" type="checkbox" placeholder="U12"> 
+                </div>
+                <div class="w3-cell">
+                    <label>U15</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U15" type="checkbox" placeholder="U15"> 
+                </div>
+                <div class="w3-cell">
+                    <label>U18</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U18" type="checkbox" placeholder="U18"> 
+                </div>
+                <div class="w3-cell" >
+                    <label class="w3-margin-right">Challenger</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Challenger" type="checkbox" placeholder="Challenger"> 
+                </div>
+                <div class="w3-cell">
+                    <label class="w3-margin-right">Ladies</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Ladies" type="checkbox" placeholder="Ladies"> 
+                </div>
+                <div class="w3-cell">
+                    <label class="w3-margin-right">Open</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Open" type="checkbox" placeholder="Open"> 
+                </div>
+                <div class="w3-cell">
+                    <label>Team</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Team" type="checkbox" placeholder="Team"> 
+                </div>
+            </fieldset>
+
+            <fieldset class="w3-cell-row w3-margin-bottom">
+                <legend class="w3-container w3-theme-l1"><h4>Extras</h4></legend>
+                <div class="w3-cell">
+                    <label class="w3-margin-right">Sayonara Party</label> <br>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Sayonara Party" type="checkbox" placeholder="Sayonara Party"> 
+                </div>
+                <div class="w3-cell">
+                    <label class="w3-margin-right">Lunch Sa</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lunch Sa" type="checkbox" placeholder="Lunch Sa"> 
+                </div>
+                <div class="w3-cell">
+                    <label class="w3-margin-right">Lunch So</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lunch So" type="checkbox" placeholder="Lunch So"> 
+                </div>
+                <div class="w3-cell" >
+                    <label class="w3-margin-right">Uebernachtung</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Uebernachtung" type="checkbox" placeholder="Uebernachtung"> 
+                </div>
+               
+            </fieldset>
+            
+            <fieldset class="w3-margin-bottom">
+                <legend class="w3-container w3-theme-l1"><h4>Anmeldung Absenden | Inscription Envoyer</h4></legend>
+                <button class="w3-button w3-theme-l3 w3-padding-16" type="submit">Absenden | Envoyer</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
