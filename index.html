@@ -7,8 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="w3-theme-light" style="width:60%">
-    <div class="w3-container w3-theme-l1"><h2>Anmeldung Kendo Schweizermeisterschaften 2023</h2></div>
+    <div class="w3-theme-light" style="width:66%">
+    <div class="w3-container w3-theme-l1"><h2>Anmeldung Kendo Schweizermeisterschaften 2023</h2> </div>
+    <div class="w3-container">
+        Bitte meldet euch mit dem untenstehenden Formular für die Kendo Schweizermeisterschaften an. 
+        Ihr solltet im Anschluss ein Bestätigungsmail erhalten, in dem eure Daten zusammengefasst sind. 
+        Falls ihr Fehler bemerkt, meldet dies bitte an <a href="mailto:registrations@kendo.ch">registrations@kendo.ch</a>. Vielen Dank. <br>
+        <br>
+        Veuillez vous inscrire aux championnats suisses de kendo en remplissant le formulaire ci-dessous.
+        Vous devriez ensuite recevoir un e-mail de confirmation récapitulant vos données. 
+        Si vous remarquez des erreurs, merci de les signaler à <a href="mailto:registrations@kendo.ch">registrations@kendo.ch</a>. Merci <br>
+        <h3>Allgemeine Informationen | Informations générales</h3>
+        <ul>
+            <li>Datum | Date: 28.-29. Oktober 2023</li>
+            <li>Ort | Lieu: St. Gallen</li>
+        </ul>
+        <h3>Kosten | Frais</h3>        
+        <ul>
+            <li>Pro Teilnehmer*in der Kategorien U12 und U15: CHF30</li>
+            <li>Pro Teilnehmer*in der übrigen Kategorien: CHF60</li>
+            <li>Teilnehmer*innen, die sowohl in der Kategorie U15 wie auch der Kategorie U18 startberechtigt sind, wird der günstigere Preis verrechnet.</li>
+            <li>Pro Team: CHF20</li>
+        </ul>
+        Die Kosten werden über die Clubs abgerechnet. 
+    </div>
+
         <form 
             class="w3-container w3-padding-16"
             method="POST" 
@@ -17,134 +40,163 @@
 
             <fieldset class="w3-margin-bottom">
                 <legend class="w3-container w3-theme-l1"><h4>Persönliche Informationen</h4></legend>
-                
-                <label>Vorname | Prénom </label>
-                <input class="w3-input w3-border w3-margin-bottom" name="Vorname" type="text" placeholder="Vorname" required>
-                
-                <label>Name | Nom</label>
-                <input class="w3-input w3-border w3-margin-bottom" name="Name" type="text" placeholder="Name" required>
-
-                <label for="">Email Adresse | Adresse email</label>
-                <input class="w3-input w3-border w3-margin-bottom" name="Email" type="email" placeholder="Email" required>
-
-                <label for="">Verein | Club</label>
-                <select class="w3-input w3-selct w3-margin-bottom" name="Verein" id="Verein" required>
-                    <option disabled selected value> -- Wähle eine Option | Choisis une option -- </option>
-                    <option value="Tendokan Aarau">Tendokan Aarau</option>
-                    <option value="Bushikan Au">Bushikan Au</option>
-                    <option value="Tshiku Sei Kan Basel">Tshiku Sei Kan Basel</option>
-                    <option value="Shin Ho Kan Bern">Shin Ho Kan Bern</option>
-                    <option value="Shung Do Kwan Genève">Shung Do Kwan Genève</option>
-                    <option value="Kendo Club Kriens">Kendo Club Kriens</option>
-                    <option value="Budokan Lausanne">Budokan Lausanne</option>
-                    <option value="Senbukan Budoschule Luzern">Senbukan Budoschule Luzern</option>
-                    <option value="Ken Shin Kan Olten">Ken Shin Kan Olten</option>
-                    <option value="Kendo Club St. Gallen">Kendo Club St. Gallen</option>
-                    <option value="Mu Mun Kwan Ticino">Mu Mun Kwan Ticino</option>
-                    <option value="Kensaikai Kendo Uni Bern">Kensaikai Kendo Uni Bern</option>
-                    <option value="Kendo Winterthur">Kendo Winterthur</option>
-                    <option value="Budokan Zürich">Budokan Zürich</option>
-                </select>
+                <div class="w3-container">
+                    <label>Vorname | Prénom </label>
+                    <input class="w3-input w3-border w3-margin-bottom" name="Vorname" type="text" placeholder="Vorname" required>
+                    
+                    <label>Name | Nom</label>
+                    <input class="w3-input w3-border w3-margin-bottom" name="Name" type="text" placeholder="Name" required>
     
-                <label>Geburtsdatum | Date de naissance</label>
-                <input class="w3-input w3-border w3-margin-bottom" name="Geburtsdatum" type="date" placeholder="Geburtsdatum" required>
+                    <label for="">Email Adresse | Adresse email</label>
+                    <input class="w3-input w3-border w3-margin-bottom" name="Email" type="email" placeholder="Email" required>
     
-                <label for="">Gradierung | Graduation</label>
-                <select class="w3-input w3-selct w3-margin-bottom" name="Gradierung" id="Gradierung" required>
-                    <option disabled selected value> -- Wähle eine Option | Choisis une option -- </option>
-                    <option value="keine">keine</option>
-                    <option value="5. Kyu">5. Kyu</option>
-                    <option value="4. Kyu">4. Kyu</option>
-                    <option value="3. Kyu">3. Kyu</option>
-                    <option value="2. Kyu">2. Kyu</option>
-                    <option value="1. Kyu">1. Kyu</option>
-                    <option value="1. Dan">1. Dan</option>
-                    <option value="2. Dan">2. Dan</option>
-                    <option value="3. Dan">3. Dan</option>
-                    <option value="4. Dan">4. Dan</option>
-                    <option value="5. Dan">5. Dan</option>
-                    <option value="6. Dan">6. Dan</option>
-                    <option value="7. Dan">7. Dan</option>
-                </select>
+                    <label for="">Verein | Club</label>
+                    <select class="w3-input w3-selct w3-margin-bottom" name="Verein" id="Verein" required>
+                        <option disabled selected value> -- Wähle eine Option | Choisis une option -- </option>
+                        <option value="Tendokan Aarau">Tendokan Aarau</option>
+                        <option value="Bushikan Au">Bushikan Au</option>
+                        <option value="Tshiku Sei Kan Basel">Tshiku Sei Kan Basel</option>
+                        <option value="Shin Ho Kan Bern">Shin Ho Kan Bern</option>
+                        <option value="Shung Do Kwan Genève">Shung Do Kwan Genève</option>
+                        <option value="Kendo Club Kriens">Kendo Club Kriens</option>
+                        <option value="Budokan Lausanne">Budokan Lausanne</option>
+                        <option value="Senbukan Budoschule Luzern">Senbukan Budoschule Luzern</option>
+                        <option value="Ken Shin Kan Olten">Ken Shin Kan Olten</option>
+                        <option value="Kendo Club St. Gallen">Kendo Club St. Gallen</option>
+                        <option value="Mu Mun Kwan Ticino">Mu Mun Kwan Ticino</option>
+                        <option value="Kensaikai Kendo Uni Bern">Kensaikai Kendo Uni Bern</option>
+                        <option value="Kendo Winterthur">Kendo Winterthur</option>
+                        <option value="Budokan Zürich">Budokan Zürich</option>
+                    </select>
+        
+                    <label>Geburtsdatum | Date de naissance</label>
+                    <input class="w3-input w3-border w3-margin-bottom" name="Geburtsdatum" type="date" placeholder="Geburtsdatum" required>
+        
+                    <label>Gradierung | Graduation</label>
+                    <select class="w3-input w3-selct w3-margin-bottom" name="Gradierung" id="Gradierung" required>
+                        <option disabled selected value> -- Wähle eine Option | Choisis une option -- </option>
+                        <option value="keine">keine</option>
+                        <option value="5. Kyu">5. Kyu</option>
+                        <option value="4. Kyu">4. Kyu</option>
+                        <option value="3. Kyu">3. Kyu</option>
+                        <option value="2. Kyu">2. Kyu</option>
+                        <option value="1. Kyu">1. Kyu</option>
+                        <option value="1. Dan">1. Dan</option>
+                        <option value="2. Dan">2. Dan</option>
+                        <option value="3. Dan">3. Dan</option>
+                        <option value="4. Dan">4. Dan</option>
+                        <option value="5. Dan">5. Dan</option>
+                        <option value="6. Dan">6. Dan</option>
+                        <option value="7. Dan">7. Dan</option>
+                    </select>
+        
+                    <label>Budopass-Nr. | No. Budopass</label>
+                    <input class="w3-input w3-border w3-margin-bottom" name="BudopassNr" type="text" placeholder="BudopassNr" required>
     
-                <label for="Budopass-Nr">Budopass-Nr. | No. Budopass</label>
-                <input class="w3-input w3-border w3-margin-bottom" name="Budopass-Nr" type="text" placeholder="Budopass-Nr" required>
-
-                <label class="w3-margin-right">Letzte zwei Jahreslizenzen bezahlt? | Deux dernières licences annuelles payées ?</label> <br>
-                <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lizenzen" type="checkbox" placeholder="Lizenzen" required> 
+                    <label class="w3-margin-right">Letzte zwei Jahreslizenzen bezahlt? | Deux dernières licences annuelles payées ?</label> <br>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lizenzen" type="checkbox" placeholder="Lizenzen" required> 
+                </div>
 
             </fieldset>
 
             <fieldset class="w3-cell-row w3-margin-bottom" >
                 <legend class="w3-container w3-theme-l1"><h4>Kategorien</h4></legend>
-                <div>
-                    <h4>Kategorien für die Kendo Schweizermeisterschaften</h4>
-                    Bitte wähle alle Kategorien aus, in der du starten möchtest und für die du startberechtigt bist.
-                    <ul class="w3-ul">
-                        <li><span class="w3-panel" style="font-weight: bold;">U12:</span>Geburtsdatum 29.10.2010 oder jünger</li>
-                        <li><span class="w3-panel" style="font-weight: bold;">U15:</span>Geburtsdatum zwischen 29.10.2007 und 28.10.2010</li>
-                        <li><span class="w3-panel" style="font-weight: bold;">U18:</span>Geburtsdatum zwischen 29.10.2004 und 28.10.2007</li>
-                        <li><span class="w3-panel" style="font-weight: bold;">Challenger:</span>Geburtsdatum vor oder am 28.10.2004, höchstens 3. Dan. <br>
-                            Finalist*innen aus früheren Challenger Turnieren müssen im Open starten.</li>
-                            <li><span class="w3-panel" style="font-weight: bold;">Open:</span>Ab 18 Jahren, mindestens 3. Dan. <br>
-                            Finalist*innen aus früheren Challenger Turnieren müssen im Open starten.</li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="w3-cell">
-                    <label class="w3-margin-right">U12</label> <br>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U12" type="checkbox" placeholder="U12"> 
-                </div>
-                <div class="w3-cell">
-                    <label>U15</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U15" type="checkbox" placeholder="U15"> 
-                </div>
-                <div class="w3-cell">
-                    <label>U18</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U18" type="checkbox" placeholder="U18"> 
-                </div>
-                <div class="w3-cell" >
-                    <label class="w3-margin-right">Challenger</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Challenger" type="checkbox" placeholder="Challenger"> 
-                </div>
-                <div class="w3-cell">
-                    <label class="w3-margin-right">Ladies</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Ladies" type="checkbox" placeholder="Ladies"> 
-                </div>
-                <div class="w3-cell">
-                    <label class="w3-margin-right">Open</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Open" type="checkbox" placeholder="Open"> 
-                </div>
-                <div class="w3-cell">
-                    <label>Team</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Team" type="checkbox" placeholder="Team"> 
+                <div class="w3-container">
+                    <div>
+                        <h4>Kategorien für die Kendo Schweizermeisterschaften</h4>
+                        Bitte wähle alle Kategorien aus, in der du starten möchtest und für die du startberechtigt bist.
+                        <ul class="w3-ul">
+                            <li><span class="w3-panel" style="font-weight: bold;">U12:</span>Geburtsdatum 29.10.2010 oder jünger</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">U15:</span>Geburtsdatum zwischen 29.10.2007 und 28.10.2010</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">U18:</span>Geburtsdatum zwischen 29.10.2004 und 28.10.2007</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">Challenger:</span>Geburtsdatum vor oder am 28.10.2004, höchstens 3. Dan. <br>
+                                Finalist*innen aus früheren Challenger Turnieren müssen im Open starten.</li>
+                                <li><span class="w3-panel" style="font-weight: bold;">Open:</span>Ab 18 Jahren, mindestens 3. Dan. <br>
+                                Finalist*innen aus früheren Challenger Turnieren müssen im Open starten.</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="w3-cell">
+                        <label class="w3-margin-right">U12</label> <br>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U12" type="checkbox" placeholder="U12"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label>U15</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U15" type="checkbox" placeholder="U15"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label>U18</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U18" type="checkbox" placeholder="U18"> 
+                    </div>
+                    <div class="w3-cell" >
+                        <label class="w3-margin-right">Challenger</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Challenger" type="checkbox" placeholder="Challenger"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label class="w3-margin-right">Ladies</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Ladies" type="checkbox" placeholder="Ladies"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label class="w3-margin-right">Open</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Open" type="checkbox" placeholder="Open"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label>Team</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Team" type="checkbox" placeholder="Team"> 
+                    </div>
                 </div>
             </fieldset>
 
             <fieldset class="w3-cell-row w3-margin-bottom">
                 <legend class="w3-container w3-theme-l1"><h4>Extras</h4></legend>
-                <div class="w3-cell">
-                    <label class="w3-margin-right">Sayonara Party</label> <br>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Sayonara Party" type="checkbox" placeholder="Sayonara Party"> 
-                </div>
-                <div class="w3-cell">
-                    <label class="w3-margin-right">Lunch Sa</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lunch Sa" type="checkbox" placeholder="Lunch Sa"> 
-                </div>
-                <div class="w3-cell">
-                    <label class="w3-margin-right">Lunch So</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Lunch So" type="checkbox" placeholder="Lunch So"> 
-                </div>
-                <div class="w3-cell" >
-                    <label class="w3-margin-right">Uebernachtung</label>
-                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Uebernachtung" type="checkbox" placeholder="Uebernachtung"> 
+                <div class="w3-container">
+                    Bitte wähle alle Extras aus, die du haben möchtest.
+                    <ul>
+                        <li>Kosten Sayonara Party: CHF30</li>
+                        <li>Kosten Lunch Sa: CHF10</li>
+                        <li>Kosten Lunch So: CHF10</li>
+                        <li>Kosten Übernachtung: CHF20</li>
+                    </ul>
+                    <div class="w3-cell">
+                        <label class="w3-margin-right">Sayonara Party</label> <br>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Sayonara" type="checkbox" placeholder="Sayonara Party"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label class="w3-margin-right">Lunch Sa</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="LunchSa" type="checkbox" placeholder="LunchSa"> 
+                    </div>
+                    <div class="w3-cell">
+                        <label class="w3-margin-right">Lunch So</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="LunchSo" type="checkbox" placeholder="LunchSo"> 
+                    </div>
+                    <div class="w3-cell" >
+                        <label class="w3-margin-right">Uebernachtung</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Uebernachtung" type="checkbox" placeholder="Uebernachtung"> 
+                    </div>
+
                 </div>
                
             </fieldset>
             
-            <fieldset class="w3-margin-bottom">
+            <fieldset class="w3-margin-bottom w3-container">
                 <legend class="w3-container w3-theme-l1"><h4>Anmeldung Absenden | Inscription Envoyer</h4></legend>
-                <button class="w3-button w3-theme-l3 w3-padding-16" type="submit">Absenden | Envoyer</button>
+                <div class="w3-container">
+                    <h4>Datenschutzbestimmungen | Politique de confidentialité</h4>
+                    Deine Daten werden nur für den angegebenen Zweck verwendet und nachher gelöscht. Durch Anwählen des untenstehenden 
+                    Knppfs bestätigst du, dass du diese Datenschutzbestimmung gelesen und verstanden hast.  <br>
+                    <br>
+                    Tes données ne seront utilisées que dans le but indiqué et seront ensuite effacées. En cliquant sur le bouton ci-dessous 
+                    tu confirmes que tu as lu et compris cette disposition sur la protection des données. <br><br>
+                </div>
+                <div class="w3-container">
+                    <label class="w3-margin-right" >Ich akzeptiere die Datenschutzbestimmungen | J'accepte la politique de confidentialité</label>
+                    <input class="w3-input w3-check w3-margin-bottom w3-margin-right" style="float: left;" name="Datenschutz" type="checkbox" required>
+                </div>
+                <div class="w3-container">
+                    <button class="w3-button w3-theme-l3 w3-padding-16" type="submit">Absenden | Envoyer</button>
+                    Achtung: Dieser Vorgang kann einige Sekunden in Anspruch nehmen. | Attention : cette opération peut prendre quelques secondes. <br>
+                </div>
+
             </fieldset>
         </form>
     </div>
