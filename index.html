@@ -21,6 +21,8 @@
         <ul>
             <li>Datum | Date: 28.-29. Oktober 2023</li>
             <li>Ort | Lieu: St. Gallen</li>
+            <li>Anmeldeschluss | Date limite d'inscription: XX.XX.XXXX</li>
+            <li class="w3-theme-l3">Anmeldeschluss für Prüfungskandidat*innen | Date limite d'inscription pour candidats aux examens: XX.XX.XXXX</li>
         </ul>
         <h3>Kosten | Frais</h3>        
         <ul>
@@ -38,8 +40,8 @@
             action="https://script.google.com/macros/s/AKfycbwJsnbIzFPq8dqTJreaKVkl-vkc25O2EEFDHuXHE3G6WpCcEmZ9b128AKIVvpaEJxHd/exec"
             >
 
-            <fieldset class="w3-margin-bottom">
-                <legend class="w3-container w3-theme-l1"><h4>Persönliche Informationen</h4></legend>
+            <fieldset class="w3-margin-bottom w3-container">
+                <legend class="w3-container w3-theme-l1"><h4>Persönliche Informationen | Informations personnelles</h4></legend>
                 <div class="w3-container">
                     <label>Vorname | Prénom </label>
                     <input class="w3-input w3-border w3-margin-bottom" name="Vorname" type="text" placeholder="Vorname" required>
@@ -99,8 +101,8 @@
 
             </fieldset>
 
-            <fieldset class="w3-cell-row w3-margin-bottom" >
-                <legend class="w3-container w3-theme-l1"><h4>Kategorien</h4></legend>
+            <fieldset class="w3-cell-row w3-margin-bottom w3-container" >
+                <legend class="w3-container w3-theme-l1"><h4>Kategorien | Catégories</h4></legend>
                 <div class="w3-container">
                     <div>
                         <h4>Kategorien für die Kendo Schweizermeisterschaften</h4>
@@ -177,7 +179,51 @@
                 </div>
                
             </fieldset>
-            
+
+            <fieldset class="w3-margin-bottom w3-container">
+                <legend class="w3-container w3-theme-l1"><h4>Dan Prüfungen | Examens du Dan</h4></legend>
+                Am 28.10.2023 finden Prüfungen vom 1. bis zum 5. Dan statt. Falls du dich für eine Dan Prüfung anmelden möchtest, 
+                dann wähle bitte aus der folgenden Auswahl aus. Bitte beachte, dass du dafür die Zulassungsbedingungen erfüllen musst. <br>
+
+                <span class="w3-theme-l3">Achtung: Damit deine Anmeldung rechtzeitig verarbeitet werden kann, muss die Anmeldung zur Prüfung bis spätestens XX.XX.XXXX bei uns eintreffen!</span>
+                
+                <br><br>
+                Le 28.10.2023, des examens du 1er au 5e dan auront lieu. Si tu souhaites t'inscrire à un examen de Dan, 
+                alors choisis s'il te plaît parmi la sélection suivante. Note que tu dois remplir les conditions d'admission pour cela.<br>
+
+                <span class="w3-theme-l3">Attention : pour que ton inscription puisse être traitée à temps, l'inscription à l'examen doit nous parvenir au plus tard le XX.XX.XXXX.!</span>
+                <br>
+                <h4>Kosten | Frais</h4>
+                <ul>
+                    <li>
+                        Prüfungsgebühren 1.-5. Dan: CHF50
+                    </li>
+                </ul>
+                Bei bestandener Prüfung fallen noch Registrationsgebühren an:
+                <ul>
+                    <li>1. Dan: CHF60</li>
+                    <li>2. Dan: CHF70</li>
+                    <li>3.-5. Dan: CHF80</li>
+                </ul>
+
+                <label>Anmeldung Dan Prüfung | Inscription Examens du Dan</label>
+                <select class="w3-input w3-selct w3-margin-bottom" name="Pruefung" id="Pruefung" required>
+                    <option value="keine" selected="selected">keine</option>
+                    <option value="1. Dan">1. Dan</option>
+                    <option value="2. Dan">2. Dan</option>
+                    <option value="3. Dan">3. Dan</option>
+                    <option value="4. Dan">4. Dan</option>
+                    <option value="5. Dan">5. Dan</option>
+                </select>
+
+                <label>EKF-Nr. (ausser Kanditat*innen für 1. Dan) | No. EKF (Sauf candidats pour 1er Dan)</label>
+                <input class="w3-input w3-border w3-margin-bottom" name="EKFNr" type="text" value="EKF Nr." required>
+
+                <div class="w3-container">
+                
+                </div>
+            </fieldset>
+
             <fieldset class="w3-margin-bottom w3-container">
                 <legend class="w3-container w3-theme-l1"><h4>Anmeldung Absenden | Inscription Envoyer</h4></legend>
                 <div class="w3-container">
