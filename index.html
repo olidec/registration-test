@@ -72,7 +72,8 @@
                     </select>
         
                     <label>Geburtsdatum | Date de naissance</label>
-                    <input class="w3-input w3-border w3-margin-bottom" name="Geburtsdatum" type="date" placeholder="Geburtsdatum" required>
+                    <input class="w3-input w3-border w3-margin-bottom" name="Geburtsdatum" type="date" id="Geburtsdatum" placeholder="Geburtsdatum" required>
+                    <!-- <span id="alter"></span><br> -->
         
                     <label>Gradierung | Graduation</label>
                     <select class="w3-input w3-selct w3-margin-bottom" name="Gradierung" id="Gradierung" required>
@@ -108,43 +109,45 @@
                         <h4>Kategorien für die Kendo Schweizermeisterschaften</h4>
                         Bitte wähle alle Kategorien aus, in der du starten möchtest und für die du startberechtigt bist.
                         <ul class="w3-ul">
-                            <li><span class="w3-panel" style="font-weight: bold;">U12:</span>Geburtsdatum 29.10.2010 oder jünger</li>
-                            <li><span class="w3-panel" style="font-weight: bold;">U15:</span>Geburtsdatum zwischen 29.10.2007 und 28.10.2010</li>
-                            <li><span class="w3-panel" style="font-weight: bold;">U18:</span>Geburtsdatum zwischen 29.10.2004 und 28.10.2007</li>
-                            <li><span class="w3-panel" style="font-weight: bold;">Challenger:</span>Geburtsdatum vor oder am 28.10.2004, höchstens 3. Dan. <br>
+                            <li><span class="w3-panel" style="font-weight: bold;">U12:</span>Maximal 12 Jahre alt (Geburtsdatum 29.10.2010 oder jünger)</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">U15:</span>Zwischen 12 und 15 Jahre alt (Geburtsdatum zwischen 29.10.2007 und 28.10.2010)</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">U18:</span>Zwischen 15 und 18 Jahre alt (Geburtsdatum zwischen 29.10.2004 und 28.10.2007)</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">Challenger:</span>Ab 18 Jahren, höchstens 3. Dan. <br>
                                 Finalist*innen aus früheren Challenger Turnieren müssen im Open starten.</li>
-                                <li><span class="w3-panel" style="font-weight: bold;">Open:</span>Ab 18 Jahren, mindestens 3. Dan. <br>
+                            <li><span class="w3-panel" style="font-weight: bold;">Ladies:</span>Damen ab 16 Jahren<br>
+                            <li><span class="w3-panel" style="font-weight: bold;">Open:</span>Ab 18 Jahren, mindestens 3. Dan. <br>
                                 Finalist*innen aus früheren Challenger Turnieren müssen im Open starten.</li>
+                            <li><span class="w3-panel" style="font-weight: bold;">Team:</span>Alle ab 16 Jahren<br>
                             <li></li>
                         </ul>
                     </div>
                     <div class="w3-cell">
                         <label class="w3-margin-right">U12</label> <br>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U12" type="checkbox" placeholder="U12"> 
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U12" id="U12" type="checkbox" placeholder="U12" onchange="google.script.run.checkInput()"> 
                     </div>
                     <div class="w3-cell">
-                        <label>U15</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U15" type="checkbox" placeholder="U15"> 
+                        <label class="w3-margin-right">U15</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U15" id="U15" type="checkbox" placeholder="U15"> 
                     </div>
                     <div class="w3-cell">
-                        <label>U18</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U18" type="checkbox" placeholder="U18"> 
+                        <label class="w3-margin-right">U18</label>
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="U18" id="U18" type="checkbox" placeholder="U18"> 
                     </div>
                     <div class="w3-cell" >
                         <label class="w3-margin-right">Challenger</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Challenger" type="checkbox" placeholder="Challenger"> 
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Challenger" id="Challenger" type="checkbox" placeholder="Challenger"> 
                     </div>
                     <div class="w3-cell">
                         <label class="w3-margin-right">Ladies</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Ladies" type="checkbox" placeholder="Ladies"> 
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Ladies" id="Ladies" type="checkbox" placeholder="Ladies"> 
                     </div>
                     <div class="w3-cell">
                         <label class="w3-margin-right">Open</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Open" type="checkbox" placeholder="Open"> 
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Open" id="Open" type="checkbox" placeholder="Open"> 
                     </div>
                     <div class="w3-cell">
                         <label>Team</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Team" type="checkbox" placeholder="Team"> 
+                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="Team" id="Team" type="checkbox" placeholder="Team"> 
                     </div>
                 </div>
             </fieldset>
@@ -246,5 +249,50 @@
             </fieldset>
         </form>
     </div>
+
+    <script>
+        const ageInput = document.getElementById('Geburtsdatum');
+        ageInput.addEventListener('input', calculateAge)
+
+
+        function calculateAge() {
+            const dobInput = document.getElementById('Geburtsdatum');
+            const dobValue = dobInput.value; // Get the value of the date input
+            const optionU12 = document.getElementById('U12');
+            const optionU15 = document.getElementById('U15');
+            const optionU18 = document.getElementById('U18');
+            const optionChallenger = document.getElementById('Challenger');
+            const optionLadies = document.getElementById('Ladies');
+            const optionOpen = document.getElementById('Open');
+            const optionTeam = document.getElementById('Team');
+
+            // Parse the input date string to create a Date object
+            const dobDate = new Date(dobValue);
+
+            // Get the current date
+            const currentDate = new Date(2023,9,28);
+
+            // Calculate the age
+            let age = currentDate.getFullYear() - dobDate.getFullYear();
+
+            currentDate.getMonth() < dobDate.getMonth() ? age-- : 
+            currentDate.getMonth() == dobDate.getMonth() && currentDate.getDate() < dobDate.getDate() ? age-- : 
+
+            // document.getElementById('alter').innerHTML = 'Dein Alter am 28.10.2023 is ' + age
+
+            age <= 12 ? optionU12.style.display = 'block' : optionU12.style.display = 'none'
+            age >= 12 && age <= 15 ? optionU15.style.display = 'block' : optionU15.style.display = 'none'
+            age >= 15 && age <= 18 ? optionU18.style.display = 'block' : optionU18.style.display = 'none'
+            age >= 18 ? optionChallenger.style.display = 'block' : optionChallenger.style.display = 'none'
+            age >= 18 ? optionOpen.style.display = 'block' : optionOpen.style.display = 'none'
+            age >= 16 ? optionLadies.style.display = 'block' : optionLadies.style.display = 'none'
+            age >= 16 ? optionTeam.style.display = 'block' : optionTeam.style.display = 'none'
+
+            
+
+        }
+
+
+    </script>
 </body>
 </html>
