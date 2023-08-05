@@ -283,7 +283,7 @@
             age <= 12 ? optionU12.style.display = 'block' : optionU12.style.display = 'none'
             age >= 12 && age <= 15 ? optionU15.style.display = 'block' : optionU15.style.display = 'none'
             age >= 15 && age <= 18 ? optionU18.style.display = 'block' : optionU18.style.display = 'none'
-            age >= 18 ? optionChallenger.style.display = 'block' : optionChallenger.style.display = 'none'
+            age < 18 ? optionChallenger.style.display = 'none' : optionChallenger.style.display = 'block'
             age >= 18 ? optionOpen.style.display = 'block' : optionOpen.style.display = 'none'
             age >= 16 ? optionLadies.style.display = 'block' : optionLadies.style.display = 'none'
             age >= 16 ? optionTeam.style.display = 'block' : optionTeam.style.display = 'none'
