@@ -178,7 +178,7 @@
                     <ul>
                         <!-- <li>Kosten Sayonara Party: CHF30</li> -->
                         <li> Lunch Sa: St. Galler Bratwurst, Grillschüblig oder Vegiburger, jeweils mit Kartoffelsalat. Kosten CHF15</li>
-                        <li>Lunch So: Pasta oder Reis (genaues Menu noch offen). Kosten CHF20</li>
+                        <li>Lunch So: Nudeln mit Gemüsse oder ThaiCurry. Kosten CHF20</li>
                         <!-- <li>Kosten Übernachtung: CHF20</li> -->
                     </ul>
                     <!-- <div class="w3-cell">
@@ -187,11 +187,22 @@
                     </div> -->
                     <div class="w3-cell">
                         <label class="w3-margin-right">Lunch Sa</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="LunchSa" type="checkbox" placeholder="LunchSa"> 
+                        <!-- <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="LunchSa" type="checkbox" placeholder="LunchSa"> -->
+                        <select class="w3-input w3-select w3-margin-bottom" name="LunchSa" id="LunchSa" required>
+                            <option value="kein Lunch" selected="selected">kein Lunch</option>
+                            <option value="Bratwurst">Bratwurst</option>
+                            <option value="Schueblig">Schueblig</option>
+                            <option value="Vegiburger">Vegiburger</option>
+                        </select> 
                     </div>
                     <div class="w3-cell">
-                        <label class="w3-margin-right">Lunch So</label>
-                        <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="LunchSo" type="checkbox" placeholder="LunchSo"> 
+                        <label class="w3-margin-right" style="margin-left: 10px;">Lunch So</label>
+                        <!-- <input class="w3-input w3-check w3-margin-bottom w3-margin-right" name="LunchSo" type="checkbox" placeholder="LunchSo">  -->
+                        <select class="w3-input w3-select w3-margin-bottom" style="margin-left: 10px;" name="LunchSo" id="LunchSo" required>
+                            <option value="kein Lunch" selected="selected">kein Lunch</option>
+                            <option value="Nudeln">Bratwurst</option>
+                            <option value="Curry">Schueblig</option>
+                        </select> 
                     </div>
                     <!-- <div class="w3-cell" >
                         <label class="w3-margin-right">Uebernachtung</label>
